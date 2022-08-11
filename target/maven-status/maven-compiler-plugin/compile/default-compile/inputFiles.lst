@@ -1,7 +1,0 @@
-/Users/fengyafei/IdeaProjects/flink-data-process/src/main/java/com/onepiece/flink/httpdump/HttpDumpLogProducer.java
-/Users/fengyafei/IdeaProjects/flink-data-process/src/main/java/com/onepiece/flink/kafka/ProducerFastStart.java
-/Users/fengyafei/IdeaProjects/flink-data-process/src/main/java/com/onepiece/flink/stream/StreamWordCount.java
-/Users/fengyafei/IdeaProjects/flink-data-process/src/main/java/com/onepiece/flink/kafka/MyNoParalleSource.java
-/Users/fengyafei/IdeaProjects/flink-data-process/src/main/java/com/onepiece/flink/kafka/ConsumerFastStart.java
-/Users/fengyafei/IdeaProjects/flink-data-process/src/main/java/com/onepiece/flink/httpdump/HttpDumpLogConsumer.java
-/Users/fengyafei/IdeaProjects/flink-data-process/src/main/java/com/onepiece/flink/batch/BatchWordCount.java
