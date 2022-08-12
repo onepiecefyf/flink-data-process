@@ -1,6 +1,6 @@
 package top.onepiece.dashboard.function;
 
-import static com.onepiece.flink.common.CommonConst.LOG_REQUEST_METHOD;
+import static top.onepiece.common.common.CommonConst.LOG_REQUEST_METHOD;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

@@ -1,7 +1,7 @@
 package top.onepiece.dashboard.tag;
 
-import com.onepiece.flink.dashboard.entity.DsmpRequest;
 import org.apache.flink.util.OutputTag;
+import top.onepiece.model.base.DsmpRequest;
 
 /**
  * 打标签分流 拆分请求/响应

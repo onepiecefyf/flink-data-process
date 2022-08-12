@@ -1,6 +1,5 @@
 package top.onepiece.dashboard.function;
 
-import com.onepiece.flink.dashboard.entity.UrlCountView;
 import org.apache.flink.api.common.state.ValueState;
 import org.apache.flink.api.common.state.ValueStateDescriptor;
 import org.apache.flink.api.common.typeinfo.TypeHint;
@@ -8,6 +7,7 @@ import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.util.Collector;
+import top.onepiece.model.base.UrlCountView;
 
 /**
  * 统计总数

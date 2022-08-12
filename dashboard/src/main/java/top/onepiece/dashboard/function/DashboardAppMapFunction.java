@@ -2,10 +2,10 @@ package top.onepiece.dashboard.function;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.onepiece.flink.entity.Fields;
-import com.onepiece.flink.enums.DsmpLogEnum;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.java.tuple.Tuple2;
+import top.onepiece.common.enums.DsmpLogEnum;
+import top.onepiece.model.base.Fields;
 
 /**
  * 解析日志json

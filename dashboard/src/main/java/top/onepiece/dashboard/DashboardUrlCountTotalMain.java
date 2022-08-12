@@ -1,24 +1,14 @@
 package top.onepiece.dashboard;
 
-import static com.onepiece.flink.common.CommonConst.APP_DSMP;
-import static com.onepiece.flink.common.CommonConst.DATA_FORMAT;
-import static com.onepiece.flink.common.CommonConst.DSMP_PV_JOB;
-import static com.onepiece.flink.common.CommonConst.KAFKA_BOOTSTRAP_SERVERS;
-import static com.onepiece.flink.common.CommonConst.KAFKA_GROUP_ID;
-import static com.onepiece.flink.common.CommonConst.KAFKA_HTTP_DUMP_TOPIC;
-import static com.onepiece.flink.common.CommonConst.KAFKA_PV_GROUP_ID;
+import static top.onepiece.common.common.CommonConst.APP_DSMP;
+import static top.onepiece.common.common.CommonConst.DATA_FORMAT;
+import static top.onepiece.common.common.CommonConst.DSMP_PV_JOB;
+import static top.onepiece.common.common.CommonConst.KAFKA_BOOTSTRAP_SERVERS;
+import static top.onepiece.common.common.CommonConst.KAFKA_GROUP_ID;
+import static top.onepiece.common.common.CommonConst.KAFKA_HTTP_DUMP_TOPIC;
+import static top.onepiece.common.common.CommonConst.KAFKA_PV_GROUP_ID;
 
 import com.alibaba.fastjson.JSONObject;
-import com.onepiece.flink.common.CommonConst;
-import com.onepiece.flink.dashboard.agg.PvCountAgg;
-import com.onepiece.flink.dashboard.entity.DsmpRequest;
-import com.onepiece.flink.dashboard.entity.UrlCountView;
-import com.onepiece.flink.dashboard.function.DashboardAppMapFunction;
-import com.onepiece.flink.dashboard.function.DashboardProcessFunction;
-import com.onepiece.flink.dashboard.function.PvResultCountFunction;
-import com.onepiece.flink.dashboard.function.TotalPvCountFunction;
-import com.onepiece.flink.dashboard.utils.DateUtils;
-import com.onepiece.flink.dashboard.utils.StrUtils;
 import java.util.Properties;
 import java.util.regex.Pattern;
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
@@ -32,6 +22,16 @@ import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010;
+import top.onepiece.common.common.CommonConst;
+import top.onepiece.common.function.DashboardAppMapFunction;
+import top.onepiece.common.function.DashboardProcessFunction;
+import top.onepiece.common.utils.DateUtils;
+import top.onepiece.common.utils.StrUtils;
+import top.onepiece.dashboard.agg.PvCountAgg;
+import top.onepiece.dashboard.function.PvResultCountFunction;
+import top.onepiece.dashboard.function.TotalPvCountFunction;
+import top.onepiece.model.base.DsmpRequest;
+import top.onepiece.model.base.UrlCountView;
 
 /**
  * url访问总量统计

@@ -1,9 +1,9 @@
 package top.onepiece.dashboard.function;
 
-import com.onepiece.flink.dashboard.entity.UrlCountView;
 import org.apache.flink.streaming.api.functions.windowing.WindowFunction;
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.util.Collector;
+import top.onepiece.model.base.UrlCountView;
 
 /**
  * 窗口聚合结果
